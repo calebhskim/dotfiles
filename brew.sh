@@ -99,3 +99,7 @@ ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 # 
 # # Remove outdated versions from the cellar.
 # brew cleanup
+
+# ZSH
+brew install zsh-syntax-highlighting
+brew install zsh-autosuggestions
