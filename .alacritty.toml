@@ -1,0 +1,81 @@
+# Configuration file for Alacritty
+# You can find the default configuration file with documentation for all fields here:
+# https://github.com/alacritty/alacritty/blob/master/alacritty.yml
+
+# Window dimensions
+window:
+  # Window padding (around text).
+  padding:
+    x: 10
+    y: 10
+
+  # Window title
+  title: "Alacritty"
+
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    family: "Menlo" # or "Fira Code" or "JetBrains Mono" (choose what you like)
+    style: Regular
+
+  # Bold font face
+  bold:
+    family: "Menlo"
+    style: Bold
+
+  # Font size
+  size: 12.0
+
+# Visual Studio Code Dark Theme colors
+colors:
+  primary:
+    background: '0x1e1e1e' # VSCode dark background color
+    foreground: '0xd4d4d4' # VSCode dark foreground color (text)
+
+  normal:
+    black:   '0x1e1e1e'
+    red:     '0xd16969'
+    green:   '0xb5cea8'
+    yellow:  '0xd7ba7d'
+    blue:    '0x569cd6'
+    magenta: '0xc586c0'
+    cyan:    '0x4ec9b0'
+    white:   '0xd4d4d4'
+
+  bright:
+    black:   '0x262626'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xe5c07b'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0xffffff'
+
+# Cursor appearance
+cursor:
+  style: Block
+  unfix: true
+  color:
+    text: '0x1e1e1e'
+    cursor: '0xd4d4d4'
+
+# Scrollback buffer (allows scrolling up in the terminal)
+scrolling:
+  history: 10000
+  multiplier: 3
+
+# Mouse bindings
+mouse:
+  url:
+    modifiers: None
+    launch: true
+
+# Keybindings (Example: Ctrl+Shift+C for Copy, Ctrl+Shift+V for Paste)
+key_bindings:
+  - { key: C, mods: Control|Shift, action: Copy }
+  - { key: V, mods: Control|Shift, action: Paste }
+
+# Background opacity (1.0 means no transparency)
+background_opacity: 0.95
