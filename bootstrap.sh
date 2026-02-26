@@ -19,6 +19,11 @@ function installTools() {
 		git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting";
 	fi;
 
+	# Rust
+	if [ ! -d "$HOME/.cargo" ]; then
+		curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --no-modify-path;
+	fi;
+
 	# NVM
 	if [ ! -d "$HOME/.nvm" ]; then
 		curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash;
